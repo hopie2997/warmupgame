@@ -1,0 +1,147 @@
+body, header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+}
+
+body {
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+header img {
+    height: 50px;
+    margin: 0 10px;
+}
+
+table {
+    width: 60%;
+    height: 60%;
+    border-collapse: collapse;
+    margin-top: 100px;
+    background-color: #f0f0f0; /* Very light grey background */
+}
+
+td {
+    width: 33%;
+    height: 33%;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #000;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content img {
+    height: 800px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+button {
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-right: 50px;
+    font-weight: bold;
+}
+
+.close {
+    color: red;
+    cursor: pointer;
+}
+
+.solve {
+    color: green;
+}
+
+.close, .solve {
+    float: right;
+}
+
+.close:hover, .solve:hover, .close:focus, .solve:focus {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes flowerEffect {
+    0% {
+        transform: scale(1);
+        background-color: #ffeb3b;
+        box-shadow: 0 0 10px #ffeb3b, 0 0 20px #ffeb3b, 0 0 30px #ffeb3b;
+    }
+    50% {
+        transform: scale(1.1);
+        background-color: #ffc107;
+        box-shadow: 0 0 20px #ffc107, 0 0 30px #ffc107, 0 0 40px #ffc107;
+    }
+    100% {
+        transform: scale(1);
+        background-color: #ffeb3b;
+        box-shadow: 0 0 10px #ffeb3b, 0 0 20px #ffeb3b, 0 0 30px #ffeb3b;
+    }
+}
+
+.final-solve {
+    margin-top: 20px;
+    font-size: 2em;
+    color: blue;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    animation: flowerEffect 2s infinite;
+}
+
+#lifestyleText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 10em;
+    text-transform: uppercase;
+    font-weight: bold;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUZZLE GAME</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <img src="images/eiy.png" alt="EIY Logo">
+    <img src="images/moneyforward.webp" alt="MoneyForward Logo">
+</header>
+
+<table>
+    <tr>
+        <td onclick="showImage(this)">1</td>
+        <td onclick="showImage(this)">2</td>
+        <td onclick="showImage(this)">3</td>
+    </tr>
+    <tr>
+        <td onclick="showImage(this)">4</td>
+        <td onclick="showImage(this)">5</td>
+        <td onclick="showImage(this)">6</td>
+    </tr>
+    <tr>
+        <td onclick="showImage(this)">7</td>
+        <td onclick="showImage(this)">8</td>
+        <td onclick="showImage(this)">9</td>
+    </tr>
+</table>
+<button id="finalSolveButton" class="final-solve hidden" onclick="showFinalImage()">Solve All</button>
+
+<div id="imageModal" class="modal">
+    <div class="modal-content">
+        <img id="modalImage" src="" alt="Image">
+    </div>
+</div>
+<script src="scripts.js"></script>
+</body>
+</html>
