@@ -11,15 +11,15 @@ const imageSources = [
     'images/exercise.jpg'
 ];
 const solvedTexts = [
-    'love',
-    'idea',
-    'fun',
-    'energy',
-    'sleep',
-    'travel',
-    'yoga',
-    'learn',
-    'exercise'
+    'LOVE',
+    'IDEA',
+    'FUN',
+    'ENERGY',
+    'SLEEP',
+    'TRAVEL',
+    'YOGA',
+    'LEARN',
+    'EXERCISE'
 ];
 const questions = [
     'What is this?',

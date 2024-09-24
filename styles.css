@@ -155,3 +155,26 @@ button {
     text-align: center;
     margin-bottom: 20px;
 }
+
+@keyframes fireEffect {
+    0% {
+        transform: scale(1);
+        color: #ff4500;
+        text-shadow: 0 0 10px #ff4500, 0 0 20px #ff4500, 0 0 30px #ff4500;
+    }
+    50% {
+        transform: scale(1.1);
+        color: #ff8c00;
+        text-shadow: 0 0 20px #ff8c00, 0 0 30px #ff8c00, 0 0 40px #ff8c00;
+    }
+    100% {
+        transform: scale(1);
+        color: #ff4500;
+        text-shadow: 0 0 10px #ff4500, 0 0 20px #ff4500, 0 0 30px #ff4500;
+    }
+}
+
+#secretText span {
+    display: inline-block;
+    animation: fireEffect 1s infinite;
+}
