@@ -11,15 +11,15 @@ const imageSources = [
     'images/vietnam.png'
 ];
 const solvedTexts = [
-    'barcelona',
-    'iphone',
-    'laptop',
-    'messi',
-    'real',
-    'ronaldo',
-    'sony',
-    'taylorswift',
-    'vietnam'
+    'BARCELONA',
+    'IPHONE',
+    'LAPTOP',
+    'MESSI',
+    'REAL MADRID',
+    'RONALDO',
+    'SONY',
+    'TAYLOR SWIFT',
+    'VIETNAM'
 ];
 const questions = [
     'What team is this?',
