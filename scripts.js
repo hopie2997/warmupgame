@@ -32,6 +32,7 @@ const questions = [
     'What are they doing?',
     'What are the students doing?'
 ]
+const secretText = 'LIFESTYLE';
 
 function closeModal() {
     document.getElementById('imageModal').style.display = 'none';
@@ -84,8 +85,8 @@ function showFinalImage() {
     document.getElementById('imageModal').style.display = 'none';
 
     const lifestyleText = document.createElement('div');
-    lifestyleText.id = 'lifestyleText';
-    const text = 'LIFESTYLE';
+    lifestyleText.id = 'secretText';
+    const text = secretText;
     const colors = ['#00008B', '#8B0000', '#006400', '#8B008B', '#FF8C00', '#8B4513', '#2F4F4F', '#4B0082', '#B22222'];
 
     text.split('').forEach((char, i) => {

@@ -137,7 +137,7 @@ button {
     animation: flowerEffect 2s infinite;
 }
 
-#lifestyleText {
+#secretText {
     display: flex;
     justify-content: center;
     align-items: center;
