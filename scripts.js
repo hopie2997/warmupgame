@@ -1,38 +1,38 @@
 let solvedCells = [];
 const imageSources = [
-    'images/love.jpg',
-    'images/idea.png',
-    'images/fun.jpg',
-    'images/energy.jpg',
-    'images/sleep.png',
-    'images/travel.png',
-    'images/yoga.jpg',
-    'images/learn.png',
-    'images/exercise.jpg'
+    'images/barcelona.png',
+    'images/iphone.jpg',
+    'images/laptop.jpg',
+    'images/messi.jpg',
+    'images/real.png',
+    'images/ronaldo.png',
+    'images/sony.png',
+    'images/taylorswift.png',
+    'images/vietnam.png'
 ];
 const solvedTexts = [
-    'LOVE',
-    'IDEA',
-    'FUN',
-    'ENERGY',
-    'SLEEP',
-    'TRAVEL',
-    'YOGA',
-    'LEARN',
-    'EXERCISE'
+    'barcelona',
+    'iphone',
+    'laptop',
+    'messi',
+    'real',
+    'ronaldo',
+    'sony',
+    'taylorswift',
+    'vietnam'
 ];
 const questions = [
+    'What team is this?',
     'What is this?',
     'What is this?',
-    'How does she look?',
-    'What is this?',
-    'What is she doing?',
-    'What does she want to do?',
-    'What are they doing?',
-    'What are they doing?',
-    'What are the students doing?'
+    'Who is he?',
+    'What team is this?',
+    'Who is he?',
+    'What brand is this?',
+    'Who is she?',
+    'What country is this?'
 ]
-const secretText = 'LIFESTYLE';
+const secretText = 'HUDDLE CLUB';
 
 function closeModal() {
     document.getElementById('imageModal').style.display = 'none';
