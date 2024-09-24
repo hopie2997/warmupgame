@@ -21,6 +21,17 @@ const solvedTexts = [
     'learn',
     'exercise'
 ];
+const questions = [
+    'What is this?',
+    'What is this?',
+    'How does she look?',
+    'What is this?',
+    'What is she doing?',
+    'What does she want to do?',
+    'What are they doing?',
+    'What are they doing?',
+    'What are the students doing?'
+]
 
 function closeModal() {
     document.getElementById('imageModal').style.display = 'none';
@@ -31,12 +42,27 @@ function showImage(cell) {
     if (solvedTexts.includes(cell.innerHTML)) return;
 
     const modal = document.getElementById('imageModal');
+    const modalContent = document.querySelector('.modal-content');
     const modalImage = document.getElementById('modalImage');
+
+    // Remove existing question if any
+    const existingQuestion = document.getElementById('modalQuestion');
+    if (existingQuestion) {
+        modalContent.removeChild(existingQuestion);
+    }
+
+    // Create and insert the question paragraph
+    const question = document.createElement('p');
+    question.id = 'modalQuestion';
+    question.innerText = questions[cellIndex];
+    modalContent.insertBefore(question, modalImage);
+
     modalImage.src = imageSources[cellIndex];
     modal.style.display = 'flex';
 
     modalImage.ondblclick = () => solve(cell);
 }
+
 
 function solve(cell) {
     const cellIndex = parseInt(cell.innerText) - 1;

@@ -146,3 +146,12 @@ button {
     text-transform: uppercase;
     font-weight: bold;
 }
+
+#modalQuestion {
+    font-size: 3em; /* Really big font size */
+    position: absolute;
+    top: 120px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
